@@ -31,7 +31,7 @@ body, .siteWrapper {
  color: #FEE715FF;
  font-weight: 600;
  font-size: 44px;
- position: absolute;
+ position: relative;
  left: 60px;
  top: 35px;
  padding-bottom: 6px;
