@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SEBEDE DATA - Buy data plan</title>
+	<link rel="stylesheet" href="/assets/style/style.css">
+</head>
+<body>
+	<div class="col body-wrapper">
+		<header>
+			<img src="/assets/img/SEBEDE.svg" alt="">
+		</header>
+		<main class="row">
+			<div class="form-container col">
+				<form action="" method="" class="col">				
+				<h1>SEBEDE Data</h1>
+					<fieldset>
+					 <legend hidden>input your details to buy data</legend>
+					 <div class="field col">
+						<label class="flex row" for="network">Network <img id="network-logo" src="./assets/img/networks-logo/mtn.png" alt="mtn-logo"></label>
+						<select name="network" id="network" required>
+							<option value="mtn">MTN</option>
+						</select>    
+					 </div>
+					 <div class="field col">
+						 <div class="row">
+							<label for="plan">Data plan</label>
+							<span id="plans-chart">Plans chart</span></div>
+						<select name="plan" id="plan" required>
+							<option value="mtn">40Gb - N20,000</option>
+						</select>    
+					 </div>
+					 <div class="field col">
+						<label for="tel">Phone number</label>
+						<input type="tel" name="tel" id="tel" required>     
+					 </div>
+					 <div class="field col">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" required> 
+					 </div>
+					</fieldset>   
+					<div class="form-footer row">
+						<p class="balance-wrapper">
+							Total: <br></total: <br> <span id="total">N30,000</span>
+						</p>
+						<div class="col rel proceed-wrapper">
+							<p hidden>secure payment with paystack</p>
+							<button type="submit" name="submit" id="proceed-btn"><div class="row"><span>Proceed to payment</span> <div class="logo"></div></div></button>								
+							<div class="pay-stack-logo"></div>
+						</div>
+					</div>
+				 </form>
+			</div>
+			<div class="illustration-container">
+				<figure>
+					<figcaption hidden>person holding a phone</figcaption>
+				</figure>
+			</div>
+		</main>
+		<footer>
+			<div class="row">
+			<a href="tel:+2348144935610">08144935610</a>
+			<p>&copy; SEBEDE TELECOMMUNICATIONS 2020</p>	
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
