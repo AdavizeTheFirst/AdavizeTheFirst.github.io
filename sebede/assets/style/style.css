@@ -121,7 +121,7 @@ form input, form select {
 }
 #proceed-btn .logo {
  margin-left: 15px;
- content: url(./assets/img/arrow.svg);
+ content: url('https://adavizethefirst.github.io/sebede/assets/img/arrow.svg');
 }
 #proceed-btn:hover {
  cursor: pointer;
@@ -132,14 +132,14 @@ form input, form select {
  position: absolute;
  right: 5px;
  bottom: -30px;
- content: url(./assets/img/pay-stack-logo.png);
+ content: url('https://adavizethefirst.github.io/sebede/assets/img/pay-stack-logo.png');
 }
 .illustration-container {
  background: transparent linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 1%, rgb(214, 232, 243) 100%) 0% 0% no-repeat padding-box;
  flex: 1;
 }
 .illustration-container figure {
- background-image: url(./assets/img/mobile-art.png);
+ background-image: url('https://adavizethefirst.github.io/sebede/assets/img/mobile-art.png');
  background-repeat: no-repeat;
  background-position: center;
  height: auto;
