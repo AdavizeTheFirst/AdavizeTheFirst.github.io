@@ -139,7 +139,7 @@ form input, form select {
  flex: 1;
 }
 .illustration-container figure {
- background-image: url(/assets/img/mobile-art.png);
+ background-image: url(./assets/img/mobile-art.png);
  background-repeat: no-repeat;
  background-position: center;
  height: auto;
