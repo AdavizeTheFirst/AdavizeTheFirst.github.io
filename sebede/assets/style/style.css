@@ -5,16 +5,28 @@
  box-sizing: border-box;
  font-family: 'Lato', sans-serif;
 }
+.flex {
+	display: flex;
+   }
+   .row {
+	flex-direction: row;
+   }
+   .col {
+	flex-direction: column;
+   }
+   .rel {
+	position: relative;
+   }
 .body-wrapper {
  min-height: 100vh;
  width: 100%;
 }
+header, main, div, form, footer{
+	display: flex;
+}
 header {
  height: 46px;
  background-color: #002D45;
-}
-header, main, div, form, footer{
- display: flex;
 }
 header {
 align-items: center;
@@ -24,18 +36,6 @@ main {
  background-color: white;
  width: 100%; 
  flex: 1;
-}
-.flex {
- display: flex;
-}
-.row {
- flex-direction: row;
-}
-.col {
- flex-direction: column;
-}
-.rel {
- position: relative;
 }
 .form-container {
  flex: 1;
@@ -74,7 +74,10 @@ form label.flex {
  white-space: nowrap;
  cursor: pointer;
 }
-form input, form select {
+/* .custom-select select{
+	display: none
+  } */
+form input, select {
  border: 1px solid rgb(167, 204, 235);
  background-color: #E8F0FE;
  color: #272323;
@@ -83,6 +86,9 @@ form input, form select {
  height: 40px;
  width: 100%;
 }
+/* .select-selected {
+	background-color: DodgerBlue;
+} */
 .form-footer {
  width: 100%;
  justify-content: space-between;
@@ -121,25 +127,26 @@ form input, form select {
 }
 #proceed-btn .logo {
  margin-left: 15px;
- content: url('https://adavizethefirst.github.io/sebede/assets/img/arrow.svg');
+ content: url(/assets/img/arrow.svg);
 }
 #proceed-btn:hover {
  cursor: pointer;
  transform: scale(1.03); 
  box-shadow: 0px 4px 12px #00000069;
 }
-.pay-stack-logo {
+.flutterwave-logo {
  position: absolute;
  right: 5px;
- bottom: -30px;
- content: url('https://adavizethefirst.github.io/sebede/assets/img/pay-stack-logo.png');
+ bottom: -40px;
+ height: 33px;
+ content: url(/assets/img/flutterwave-logo.png);
 }
 .illustration-container {
  background: transparent linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 1%, rgb(214, 232, 243) 100%) 0% 0% no-repeat padding-box;
  flex: 1;
 }
 .illustration-container figure {
- background-image: url('https://adavizethefirst.github.io/sebede/assets/img/mobile-art.png');
+ background-image: url(/assets/img/mobile-art.png);
  background-repeat: no-repeat;
  background-position: center;
  height: auto;
@@ -165,6 +172,51 @@ footer p, footer a {
  color: #BDD3E0;
  font-size: 13px;
  letter-spacing: 1px;
+}
+#notification-container {
+   width: 100%;
+   padding: 30px 20px;
+   align-items: center;
+   justify-content: center;
+}
+.transaction-status {
+   font-weight: bold;
+   margin: 20px 0 16px 0;
+   font-size: 30px;
+   color: #092c22;
+   text-align: center;
+}
+.notification-wrapper {
+   align-items: center;
+}
+#notification-message {
+   text-align: center;
+   width: 60%;
+   line-height: 150%;
+   font-size: 16px;
+}
+.other-services {
+   align-items: center;
+   list-style-type: none;
+}
+.other-services h2{
+   font-weight: bold;
+   font-size: 16px;
+   color: #1E1E1E;
+   margin: 65px 0 15px 0;
+   text-align: center;
+}
+.other-services a {
+   font-size: 16px;
+   color: inherit;
+   font-weight: normal;
+   white-space: nowrap;
+}
+.other-services li {
+   text-align: center;
+   color: #606060;
+   font-size: 15px;
+   margin-bottom: 10px;
 }
 @media only screen and (max-width: 1100px) {
  .form-container {
@@ -228,5 +280,12 @@ footer p, footer a {
  }
  footer p, footer a {
   margin-right: 0;
+ }
+ /* alert */
+ #notification-message {
+    width: 75%;
+ }
+ #notification-container  {
+    padding: 10px;
  }
 }
