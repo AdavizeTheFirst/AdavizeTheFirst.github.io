@@ -5,7 +5,7 @@ var notify = `
  <h1 class="transaction-status">Transaction successful</h1>
  <p id="notification-message">Thank you for using our service.
   You will be credited with 20gb on
-  081 4493 5610 shortly.</p>
+  08144935610 shortly.</p>
 </div>
 <ul class="other-services flex col">
  <h2>Other services <a href="tel:+2348144935610">( 081 4493 5610 )</a></h2>
