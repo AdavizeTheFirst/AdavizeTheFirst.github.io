@@ -29,6 +29,9 @@ adContent.innerHTML = `
 </div>`
 main.appendChild(adContent)
 ad = document.getElementById("ad");
+ document.getElementById("cancel-ad").addEventListener('contextmenu', function(e){
+  e.preventDefault()
+})
 document.getElementById("cancel-ad").addEventListener("click", function(){
   ad.remove()
 })
